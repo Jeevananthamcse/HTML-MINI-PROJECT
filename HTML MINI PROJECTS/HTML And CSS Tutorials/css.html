@@ -1,0 +1,57 @@
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+                <h5>HTML And CSS Tutorials </h5>
+                <!--content stacking for smaller screens-->
+                <ul class="nav nav-pills nav-stacked">
+                 <!--internal linking to the respective sections-->
+                    <a class="nav-link" href="intro.html" rel="internal">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="html.html" rel="internal">
+                        <li>HTML</li>
+                    </a>
+                    <a class="nav-link" href="css.html" rel="internal">
+                        <li>CSS</li>
+                    </a>
+                 </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction" >
+                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                    <h3 style = "background: green; color: white">CSS</h3>
+                    <article>
+					<p>
+					<li>HTML was NEVER intended to contain tags for formatting a web page!
+					<br>
+
+<li>HTML was created to describe the content of a web page, like:
+
+<li>< h1 >This is a heading < /h1 >
+
+<li>< p >This is a paragraph.< /p >
+
+<li>When tags like < font >, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. <li>Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
+
+<li>To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+
+<li>CSS removed the style formatting from the HTML page!
+					</p>
+
+                        </article>
+                </section>
+
+
+            </main>
+        </div>
+    </div>
+</div>
+</html>

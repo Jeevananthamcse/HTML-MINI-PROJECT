@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<img id="myImage"  src="pic_bulboff.gif" width="100" height="180">
+<br>
+<button onclick="changeImage()">ON/OFF</button>
+<br>
+<p>Click the light button to turn on/off the light.</p>
+</center>
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
+}
+</script>
+
+</body>
+</html>

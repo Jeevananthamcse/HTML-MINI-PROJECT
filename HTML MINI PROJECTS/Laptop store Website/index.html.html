@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Laptop UI</title>
+	<style>
+	@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 5px;
+}
+
+nav {
+  flex: 2;
+}
+
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link {
+  color: #5f5f79;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* hero */
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 2.75rem;
+  font-weight: 500;
+  background-color: #494964;
+  background: linear-gradient(to right, #494964, #6f6f89);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  margin-top: 5px;
+  font-size: 1.375rem;
+  color: #585772;
+}
+
+.cta {
+  padding: 50px 0 0 0;
+}
+
+.cta-select {
+  border: 2px solid #c36cbb;
+  background: transparent;
+  color: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.cta-add {
+  background: #c36cbb;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  margin: 30px 0px 0px 30px;
+}
+
+.cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.cover img {
+  height: 100%;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.big-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.medium-circle {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  height: 60%;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.small-circle {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: -1;
+}
+
+.laptop-select {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 20%;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    flex: 3;
+  }
+  .nav-links {
+    display: none;
+  }
+  .cover img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 1.875rem;
+  }
+
+  .intro-text p {
+    font-size: 1.125rem;
+  }
+
+  .cta {
+    padding: 10px 0 0 0;
+  }
+
+  .laptop-select {
+    bottom: 5%;
+    right: 50%;
+    width: 50%;
+    transform: translate(50%, 5%);
+  }
+
+  .cover img {
+    height: 80%;
+  }
+
+  .small-circle,
+  .medium-circle,
+  .big-circle {
+    opacity: 0.2;
+  }
+}
+	</style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <svg
+          width="44"
+          height="22"
+          viewBox="0 0 44 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+
+        </svg>
+        <h4 class="logo">MPTI Store</h4>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">Products</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <svg
+          width="33"
+          height="33"
+          viewBox="0 0 33 33"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+
+        </svg>
+      </div>
+    </header>
+    <main>
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1>MPTI Laptop for the future world</h1>
+            <p>
+              The new 14 inch bezeless display oferring a 4k display with touch
+              screen.
+            </p>
+          </div>
+          <div class="cta">
+            <button class="cta-select">14 Inch</button>
+            <button class="cta-add">Add to Cart</button>
+          </div>
+        </div>
+        <div class="cover">
+          <img src="https://i.ibb.co/FJrnpsL/matebook.png" alt="Matebook" />
+        </div>
+      </section>
+      <div class="laptop-select">
+        <svg
+          width="14"
+          height="24"
+          viewBox="0 0 14 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+
+        </svg>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+        </svg>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+        </svg>
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+        </svg>
+
+        <svg
+          width="14"
+          height="24"
+          viewBox="0 0 14 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+
+        </svg>
+      </div>
+      <svg
+        class="big-circle"
+        width="720"
+        height="739"
+        viewBox="0 0 720 739"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+
+      </svg>
+      <svg
+        class="medium-circle"
+        width="496"
+        height="496"
+        viewBox="0 0 496 496"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+    
+      </svg>
+      <svg
+        class="small-circle"
+        width="380"
+        height="324"
+        viewBox="0 0 380 324"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+
+      </svg>
+    </main>
+  </body>
+</html>

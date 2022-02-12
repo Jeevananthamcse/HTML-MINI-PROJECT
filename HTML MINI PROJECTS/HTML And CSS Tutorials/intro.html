@@ -1,0 +1,58 @@
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+                <h5>HTML And CSS Tutorials </h5>
+                <!--content stacking for smaller screens-->
+                <ul class="nav nav-pills nav-stacked">
+                 <!--internal linking to the respective sections-->
+                    <a class="nav-link" href="intro.html" rel="internal">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="html.html" rel="internal">
+                        <li>HTML</li>
+                    </a>
+                    <a class="nav-link" href="css.html" rel="internal">
+                        <li>CSS</li>
+                    </a>
+                 </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction" >
+                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                    <h3 style = "background: green; color: white">HTML</h3>
+                    <article>
+                    <ul>
+					<li>HTML stands for Hyper Text Markup Language</li>
+					<li>HTML is the standard markup language for creating Web pages</li>
+					<li>HTML describes the structure of a Web page</li>
+					<li>HTML consists of a series of elements</li>
+					<li>HTML elements tell the browser how to display the content</li>
+					<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+					</ul>
+                        </article>
+                </section>
+                <section class="main-section" id="What_you_should_already_know">
+                    <h3 style = "background: green; color: white">CSS</h3>
+					<ul>
+					<li>CSS stands for Cascading Style Sheets</li>
+					<li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+					<li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+					<li>External stylesheets are stored in CSS files</li>
+					
+					
+
+                </section>
+
+            </main>
+        </div>
+    </div>
+</div>
+</html>
